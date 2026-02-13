@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:international_phone_input/international_phone_input.dart';
+import 'package:intl_phone_pick/international_phone_input.dart';
 
 void main() {
   group('InternationalPhoneInput Tests', () {
@@ -53,8 +53,7 @@ void main() {
       expect(find.text('Phone Number'), findsOneWidget);
     });
 
-    testWidgets('shows required asterisk when isRequired is true',
-        (WidgetTester tester) async {
+    testWidgets('shows required asterisk when isRequired is true', (WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
@@ -71,8 +70,7 @@ void main() {
       expect(find.text(' *'), findsOneWidget);
     });
 
-    testWidgets('calls onChanged when text changes',
-        (WidgetTester tester) async {
+    testWidgets('calls onChanged when text changes', (WidgetTester tester) async {
       Country? selectedCountry;
       String? phoneNumber;
 
@@ -98,8 +96,7 @@ void main() {
       expect(selectedCountry, isNotNull);
     });
 
-    testWidgets('validates phone number length',
-        (WidgetTester tester) async {
+    testWidgets('validates phone number length', (WidgetTester tester) async {
       final formKey = GlobalKey<FormState>();
 
       await tester.pumpWidget(
@@ -235,8 +232,7 @@ void main() {
       expect(country.getTranslatedName('es'), 'Estados Unidos');
     });
 
-    test('getTranslatedName returns English name when translation unavailable',
-        () {
+    test('getTranslatedName returns English name when translation unavailable', () {
       const country = Country(
         name: 'United States',
         nameTranslations: {},

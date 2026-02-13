@@ -1,4 +1,4 @@
-name: international_phone_input
+name: intl_phone_pick
 description: A customizable Flutter widget for international phone number input with country selection, automatic validation, and support for 240+ countries.
 version: 1.0.0
 # TODO: Update with your GitHub repository before publishing
@@ -23,6 +23,5 @@ topics:
   - phone-input
   - international
   - country-picker
-  - form-field
   - validation
   - widget
