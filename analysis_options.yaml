@@ -1,0 +1,28 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - annotate_overrides
+    - avoid_empty_else
+    - avoid_print
+    - avoid_unnecessary_containers
+    - await_only_futures
+    - camel_case_types
+    - cancel_subscriptions
+    - constant_identifier_names
+    - empty_catches
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - require_trailing_commas
+    - sort_child_properties_last
+    - use_key_in_widget_constructors
+
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+  exclude:
+    - lib/src/data/countries_data.dart
